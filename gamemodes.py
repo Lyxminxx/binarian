@@ -5,10 +5,7 @@ from functions import binarian
 from functions import clear
 
 def norToBin(level):
-    wordsInLevel = []
-    for word, word_level in words.items():
-        if word_level == level:
-            wordsInLevel.append(word)
+    wordsInLevel = words[level].copy()
     word = random.choice(wordsInLevel)
     correctTranslation = binarian(word)
 
@@ -18,6 +15,20 @@ def norToBin(level):
     if userIn == correctTranslation:
         print(f'Yes the word {word} does translate to {userIn}!')
     else:
-        print(f'No, the word {word} translates to {correctTranslation}. Better study some more!')
+        print(f'No, the word {word} translates to {correctTranslation}, not {userIn}. Better study some more!')
+    input("Hit ENTER to continue")
 
-norToBin(2)
+def binToNor(level):
+    wordsInLevel = words[level].copy()
+    word = random.choice(wordsInLevel)
+    correctTranslation = word
+    word = binarian(word)
+
+    print(f'Translate {word} into english!')
+    userIn = input("Write anwser\n>")
+    clear()
+    if userIn == correctTranslation:
+        print(f'Yes the word {word} does translate to {userIn}!')
+    else:
+        print(f'No, the word {word} translates to {correctTranslation}, not {userIn}. Better study some more!')
+    input("Hit ENTER to continue")
