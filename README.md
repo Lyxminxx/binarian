@@ -8,5 +8,9 @@ Welcome to Binarian! A project to write English and Norwegian in binary. The ide
 - Games like wordle and hangman
 - Translator
 
+## License
+
+This project is licensed under the GNU General Public License v3.0 or later - see the [LICENSE](LICENSE) file for details.
+
 
  
