@@ -1,12 +1,9 @@
-from functions import binarian
-from functions import unbinarian
-from submenus import entoBin
-from submenus import binToEn
+from submenus import entoBin, binToEn, translateMenu
 from functions import clear
 import readchar
 
 def main_menu():
-    options = ["Translate from English to Binarian", "Translate from Binarian to English", "Exit"]
+    options = ["Translate from English to Binarian","Translate from Binarian to English","Translate","Exit"]
     selected = 0
 
     while True:
@@ -30,11 +27,10 @@ def main_menu():
                 break
             elif options[selected] == "Translate from English to Binarian":
                 entoBin()
-            elif option[selected == "Translate from Binarian to English"]:
+            elif options[selected] == "Translate from Binarian to English":
                 binToEn()
-            else:
-                print(f"Selected: {options[selected]}")
-                input("Press Enter to return to menu...")
+            elif options[selected] == "Translate":
+                translateMenu()
 
 if __name__ == "__main__":
     main_menu()
