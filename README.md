@@ -5,7 +5,7 @@ Welcome to Binarian! A project to write English and Norwegian in binary. The ide
 ***Binarian has a bunch of features:***
 
 - Learn by translating words
-- Games like wordle and hangman
+- Games like wordle and hangman (Still in development)
 - Translator
 
 ## License
