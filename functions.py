@@ -50,3 +50,6 @@ def clear():
     # for mac and linux(here, os.name is 'posix')
     else:
         _ = system('clear')
+
+def is_valid_format(binary_string):
+    return bool(re.fullmatch(r"\([01]{5}\)", binary_string))

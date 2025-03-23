@@ -16,10 +16,11 @@
 
 from submenus import entoBin, binToEn, translateMenu
 from functions import clear
+from gamemodes import hangman
 import readchar
 
 def main_menu():
-    options = ["Translate from English to Binarian","Translate from Binarian to English","Translate","Exit"]
+    options = ["Translate from English to Binarian","Translate from Binarian to English","Hangman","Translate","Exit"]
     selected = 0
 
     while True:
@@ -47,6 +48,8 @@ def main_menu():
                 binToEn()
             elif options[selected] == "Translate":
                 translateMenu()
+            elif options[selected] == "Hangman":
+                hangman()
 
 if __name__ == "__main__":
     main_menu()
